@@ -60,7 +60,7 @@ flowchart TD
         EG["EmbeddingGenerator.php<br/>• Character 3-5 n-grams<br/>• Bi-grams & Skip-grams<br/>• TF Weighting<br/>• L2 Normalization (||v|| = 1.0)"]
     end
 
-    subgraph DB ["MySQL Database (Port 3307)"]
+    subgraph DB ["MySQL Database (Port 3306)"]
         RD[("embeddings.rag_document<br/>• rag_id<br/>• context<br/>• embeddings (1024-D JSON)")]
     end
 
@@ -84,7 +84,7 @@ flowchart TD
 ### Configuration (`Database.php`)
 ```php
 "Host"     => "localhost",
-"Port"     => "3307",
+"Port"     => "3306",
 "Username" => "root",
 "Password" => "",
 "DBName"   => "embeddings"
@@ -155,7 +155,7 @@ embeddings/
 
 ### Prerequisites
 - **PHP**: 8.1 or higher (with `pdo_mysql`, `mbstring` enabled).
-- **MySQL**: Running on port `3307` (standard Laragon MySQL configuration).
+- **MySQL**: Running on port `3306` (standard Laragon MySQL configuration).
 - **Web Server**: Apache or Nginx (e.g., inside Laragon `www/` root).
 
 ### Quick Setup Steps
@@ -164,11 +164,11 @@ embeddings/
    # Example in Laragon
    cd f:/Laragon/www/Semantic-Search/embeddings
    ```
-2. Confirm your MySQL server is running on port **3307**.
+2. Confirm your MySQL server is running on port **3306**.
 3. Verify connection settings in `Database.php`:
    ```php
    "Host"     => "localhost",
-   "Port"     => "3307",
+   "Port"     => "3306",
    "Username" => "root",
    "Password" => "",
    "DBName"   => "embeddings"
