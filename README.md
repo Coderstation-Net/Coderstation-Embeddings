@@ -6,6 +6,7 @@
 [![License](https://img.shields.io/badge/License-Proprietary-062E52?style=flat)](https://github.com)
 
 A high-performance, native PHP vector embedding and Retrieval-Augmented Generation (RAG) semantic search application. It converts textual documents into normalized **1,024-dimensional float vectors** and calculates real-time **Cosine Similarity** rankings directly without external paid embedding APIs or Python dependencies.
+<img width="1916" height="972" alt="image" src="https://github.com/user-attachments/assets/66874334-38a8-45bb-bbf6-ef80e5267b6d" />
 
 ---
 
