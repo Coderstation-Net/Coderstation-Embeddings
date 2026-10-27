@@ -51,33 +51,7 @@ This project provides:
 
 ## System Architecture
 
-```mermaid
-flowchart TD
-    subgraph UI ["User Interface Layer"]
-        UP["upload.php<br/>(Add Documents / Batch Upload)"]
-        SP["search.php<br/>(Query Input)"]
-    end
-
-    subgraph ENGINE ["Embedding Pipeline"]
-        EG["EmbeddingGenerator.php<br/>• Character 3-5 n-grams<br/>• Bi-grams & Skip-grams<br/>• TF Weighting<br/>• L2 Normalization (||v|| = 1.0)"]
-    end
-
-    subgraph DB ["MySQL Database (Port 3306)"]
-        RD[("embeddings.rag_document<br/>• rag_id<br/>• context<br/>• embeddings (1024-D JSON)")]
-    end
-
-    subgraph SIM ["Ranking Engine"]
-        CS["CosineSimilarity.php<br/>Formula: cos(θ) = A · B / (||A|| ||B||)"]
-        TOP5["Top 5 Ranked Results<br/>(Similarity %, Scores, Badges)"]
-    end
-
-    UP -->|Raw Text| EG
-    EG -->|1024 Float Vector| RD
-    SP -->|User Query| EG
-    EG -->|Query Vector A| CS
-    RD -->|Stored Vectors B| CS
-    CS --> TOP5
-```
+ <img width="966" height="1024" alt="image" src="https://github.com/user-attachments/assets/2bee69a8-0b06-4295-80f2-b757484115e0" />
 
 ---
 
