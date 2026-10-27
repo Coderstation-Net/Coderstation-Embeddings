@@ -1,7 +1,7 @@
 # 🧠 1024-Dimension RAG Semantic Search Engine (Native PHP)
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=flat&logo=php&logoColor=white)](https://www.php.net/)
-[![MySQL](https://img.shields.io/badge/MySQL-Port%203307-4479A1?style=flat&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![MySQL](https://img.shields.io/badge/MySQL-Port%203306-4479A1?style=flat&logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![Vector Dimension](https://img.shields.io/badge/Embeddings-1024--Dimension-FF5C0A?style=flat)](https://github.com)
 [![License](https://img.shields.io/badge/License-Proprietary-062E52?style=flat)](https://github.com)
 
