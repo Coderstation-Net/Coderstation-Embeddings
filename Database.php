@@ -6,7 +6,7 @@ declare(strict_types=1);
  *
  * Configured as requested:
  * Host: localhost
- * Port: 3307
+ * Port: 3306
  * Username: root
  * Password:  
  * DBName: embeddings
@@ -19,7 +19,7 @@ class Database
     {
         return [
             "Host" => "localhost",
-            "Port" => "3307",
+            "Port" => "3306",
             "Username" => "root",
             "Password" => "",
             "DBName" => "embeddings"
