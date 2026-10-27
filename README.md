@@ -1,4 +1,4 @@
-# 🧠 1024-Dimension RAG Semantic Search Engine (Native PHP)
+## 1024-Dimension RAG Semantic Search Engine (Native PHP)
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=flat&logo=php&logoColor=white)](https://www.php.net/)
 [![MySQL](https://img.shields.io/badge/MySQL-Port%203306-4479A1?style=flat&logo=mysql&logoColor=white)](https://www.mysql.com/)
@@ -9,7 +9,7 @@ A high-performance, native PHP vector embedding and Retrieval-Augmented Generati
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
 - [Overview](#-overview)
 - [Key Features](#-key-features)
@@ -26,7 +26,7 @@ A high-performance, native PHP vector embedding and Retrieval-Augmented Generati
 
 ---
 
-## 🚀 Overview
+## Overview
 
 Modern AI and RAG architectures depend on converting text into dense mathematical vectors to understand semantics and context. 
 
@@ -37,7 +37,7 @@ This project provides:
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 - **100% Native PHP**: Zero composer or external API key dependencies. Operates entirely inside Laragon / Apache.
 - **Fixed 1024 Vector Dimensions**: Tailored for high-capacity semantic discrimination.
@@ -47,7 +47,7 @@ This project provides:
 
 ---
 
-## 🏗 System Architecture
+## System Architecture
 
 ```mermaid
 flowchart TD
@@ -79,7 +79,7 @@ flowchart TD
 
 ---
 
-## 🗄 Database Configuration & Schema
+## Database Configuration & Schema
 
 ### Configuration (`Database.php`)
 ```php
@@ -109,7 +109,7 @@ CREATE TABLE IF NOT EXISTS `rag_document` (
 
 ---
 
-## 📐 Mathematical Foundation
+## Mathematical Foundation
 
 ### 1. Vector Projection & Feature Hashing
 Each token and subword feature $f$ is projected into the 1024-dimensional space via multi-hash signed projection:
@@ -134,7 +134,7 @@ $$\text{Percentage} = \max\left(0, \min\left(1, \cos(\theta)\right)\right) \time
 
 ---
 
-## 📁 Directory Structure
+## Directory Structure
 
 ```text
 embeddings/
@@ -151,7 +151,7 @@ embeddings/
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - **PHP**: 8.1 or higher (with `pdo_mysql`, `mbstring` enabled).
@@ -180,7 +180,7 @@ embeddings/
 
 ---
 
-## 🖥 Usage Guide
+## Usage Guide
 
 ### 1. Upload & Add Documents
 Open `http://localhost/Semantic-Search/embeddings/upload.php`:
@@ -200,26 +200,5 @@ Open `http://localhost/Semantic-Search/embeddings/search.php`:
 
 ---
 
-## 🎨 Design Tokens & Aesthetics
-
-The UI implements modern corporate design standards:
-
-| Variable | Value | Role |
-| :--- | :--- | :--- |
-| `--primary-color` | `#062E52` | Deep navy corporate brand |
-| `--secondary-color` | `#FF5C0A` | Vibrant orange accent & top badges |
-| `--accent-color` | `#6366f1` | Indigo support accent |
-| `--bg-color` | `#f4f6f8` | Clean surface background |
-| `--text-color` | `#111827` | High-contrast body text |
-| `--text-heading` | `#062E52` | Headings and titles |
-| `--button-background` | `#26549E` | Primary buttons and navigation |
-| `--button-hover-background`| `#FF5C0A` | Hover button interactive states |
-| `--header-footer-bg` | `#26549E` | Header (40px) and footer (30px) bar |
-| `--status-active` | `#BCFADD` | Success alerts and active badges |
-| `--status-deleted` | `#F59E93` | Error and warning notifications |
-
----
-
-## 📄 License & Copyright
-
-Copyright **CODERSTATION 2025**. All rights reserved.
+ 
+ 
